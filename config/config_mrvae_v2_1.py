@@ -4,9 +4,6 @@ from tools import ops
 ########################### mrvae_v2.1 ###########################
 
 # ================================================ 存储路径设置 =================================================
-# name = 'mrvae_v1_1'
-# path = 'summary/mrvae_v1_1'
-# name = 'mrvae_v2_1'
 name = 'mrvae_v2_1_2'
 path = 'E:\WuXu\Dawn\MRVAE-Modification\summary/mrvae_v2_1' # 模型日志、数据存储路径
 
