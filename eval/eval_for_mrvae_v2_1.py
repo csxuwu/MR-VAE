@@ -23,15 +23,13 @@ def eval():
 	# t_image_ph, t_org_image_ph, decoder_first_out, decoder_second_out, psnr_first, psnr_second, ssim_first, ssim_second, train_op, vae_loss = mrvae()
 		t_image_ph, t_org_image_ph, decoder_first_out, decoder_second_out, psnr_GR, psnr_DR, ssim_GR, ssim_DR, global_step, train_step, lr, vae_loss= mrvae() # v212
 
-		# t_image_ph, t_org_image_ph, decoder_first_out, decoder_second_out, psnr_GR, psnr_DR, ssim_GR, ssim_DR, train_op, vae_loss= mrvae()
-
+		# testing set
 		# file_list = ['test_x','100EOS5D', 'DICM_640_480', 'dimImgs_960', 'ExDark120', 'LOLdataset_resize', 'nirscene1Dim2',
 		#          'Phos2_0_8MP_R_resize', 'TID2013_dim', 'VVdataset_resize']
 		# file_list = ['test_low_gaussian_wx_linear_trans1_200']
 		file_list = ['temp']
 
-		# 统计FLOPs 参数量
-		# print('stats before freezing')
+		# FLOPs
 		ops.stats_graph(graph)
 		# file_list = ['fm']
 		for file in (file_list):
