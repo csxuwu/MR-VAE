@@ -4,9 +4,7 @@ from tools import utils
 from tools import ops
 from choice import cfg_v2_1
 
-'''
-    原始的mrvae04 的结构
-'''
+
 cfg = cfg_v2_1
 def encoder_block(name, inputs, num_outputs, is_pool=True, scope=''):
     '''
