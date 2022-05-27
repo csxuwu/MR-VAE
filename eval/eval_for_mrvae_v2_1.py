@@ -26,7 +26,6 @@ def eval():
 		# testing set
 		# file_list = ['test_x','100EOS5D', 'DICM_640_480', 'dimImgs_960', 'ExDark120', 'LOLdataset_resize', 'nirscene1Dim2',
 		#          'Phos2_0_8MP_R_resize', 'TID2013_dim', 'VVdataset_resize']
-		# file_list = ['test_low_gaussian_wx_linear_trans1_200']
 		file_list = ['temp']
 
 		# FLOPs
