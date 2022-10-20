@@ -1,7 +1,7 @@
 # MR-VAE
 “一种基于MR-VAR的低照度图像增强方法”[1]  
 Low-illumination Image Enhancement Based on MR-VAE
-![images](https://github.com/csxuwu/MR-VAE/blob/master/images/MR-VAE.png)
+![image](https://github.com/csxuwu/MR-VAE/blob/master/images/MR-VAE.png)
 
 ## Abstract
 针对低照度图像多重失真特点（低亮度、多噪声和模糊等），本文基于变分自编码器提出了一种多重构变分自编码器 （Multiple Reconstruction-Variational AutoEncoder,MR-VAE），逐步增强、从粗到细地生成高质量低照度增强图像。MR-VAE 由特征概率分布捕获、全局重构和细节重构三个模块构成，核心思想是将全局特征与局部特征分阶段重建、将多重失真问题逐步解决，全局重构模块构建图像全局特征，提高全局亮度，得到较粗糙的图像；细节重构模块权衡去噪与去模糊，生成细节更逼真、噪声更少与局部亮度更合适的图像；此外，本文定义了一个多项损失函数替代𝑙2损失，以引导网络生成高质量图像。实验结果表明，多重构与多项损失函数的设计提高了网络生成复杂图像、处理多重失真的低照度图像性能，且提高了生成图像的质量、信噪比和视觉特性。  
